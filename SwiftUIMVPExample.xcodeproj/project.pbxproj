@@ -22,6 +22,7 @@
 		53E8979E27B31D7E00A73444 /* FlightsListViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E8979D27B31D7E00A73444 /* FlightsListViewAdapter.swift */; };
 		53E897A127B31E2500A73444 /* NavigationFlightsFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E897A027B31E2500A73444 /* NavigationFlightsFlow.swift */; };
 		53E897A327B31E3200A73444 /* ModalFlightsFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E897A227B31E3200A73444 /* ModalFlightsFlow.swift */; };
+		53E897A727B3C5C300A73444 /* MockedFlightsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E897A627B3C5C300A73444 /* MockedFlightsRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		53E8979D27B31D7E00A73444 /* FlightsListViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsListViewAdapter.swift; sourceTree = "<group>"; };
 		53E897A027B31E2500A73444 /* NavigationFlightsFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationFlightsFlow.swift; sourceTree = "<group>"; };
 		53E897A227B31E3200A73444 /* ModalFlightsFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalFlightsFlow.swift; sourceTree = "<group>"; };
+		53E897A627B3C5C300A73444 /* MockedFlightsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedFlightsRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		53E8977D27B2C0B300A73444 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				53E897A527B3C56C00A73444 /* GetAll */,
 				53E8979627B31AB700A73444 /* GetById */,
 				53E8977B27B2C09B00A73444 /* Flight.swift */,
 				53E8978427B2C8D200A73444 /* FlightsRepository.swift */,
@@ -171,7 +174,6 @@
 		53E8979627B31AB700A73444 /* GetById */ = {
 			isa = PBXGroup;
 			children = (
-				53E8979927B31C0300A73444 /* GetAllFlightsUseCase.swift */,
 				53E8979727B31AC500A73444 /* GetFlightByIdUseCase.swift */,
 			);
 			path = GetById;
@@ -180,6 +182,7 @@
 		53E8979F27B31DF300A73444 /* FlightsDI */ = {
 			isa = PBXGroup;
 			children = (
+				53E897A927B3C60B00A73444 /* Infrastructure */,
 				53E897A427B31E6100A73444 /* Flows */,
 				53E8979D27B31D7E00A73444 /* FlightsListViewAdapter.swift */,
 				53E8979B27B31D7200A73444 /* FlightDetailViewAdapter.swift */,
@@ -194,6 +197,22 @@
 				53E897A027B31E2500A73444 /* NavigationFlightsFlow.swift */,
 			);
 			path = Flows;
+			sourceTree = "<group>";
+		};
+		53E897A527B3C56C00A73444 /* GetAll */ = {
+			isa = PBXGroup;
+			children = (
+				53E8979927B31C0300A73444 /* GetAllFlightsUseCase.swift */,
+			);
+			path = GetAll;
+			sourceTree = "<group>";
+		};
+		53E897A927B3C60B00A73444 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				53E897A627B3C5C300A73444 /* MockedFlightsRepository.swift */,
+			);
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +288,7 @@
 				53E897A327B31E3200A73444 /* ModalFlightsFlow.swift in Sources */,
 				53E8976F27B27A9A00A73444 /* FlightsLitsView.swift in Sources */,
 				53E8978327B2C16100A73444 /* FlightRowView.swift in Sources */,
+				53E897A727B3C5C300A73444 /* MockedFlightsRepository.swift in Sources */,
 				53E8979A27B31C0300A73444 /* GetAllFlightsUseCase.swift in Sources */,
 				53E8978F27B2EC5600A73444 /* FlightsDetailPresenter.swift in Sources */,
 				53E8979C27B31D7200A73444 /* FlightDetailViewAdapter.swift in Sources */,
