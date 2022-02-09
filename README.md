@@ -32,10 +32,12 @@ Just get an input, and produce an output.
 This can vary from component to component. For example, views are raising events as the output, but other classes may just return a value.
 
 Here's a visual representation of what this translates to in code
+
 ![Unidirectional Data Flow](./ReadmeImages/UnidirectionalDataFlow.png)
 
 # Dependencies Graph
 The benefit of a modular architecture, is that it enables modules to grow independently, so you can have farily big modules that contain a lot of features, along side another small module that just contains a simple feature, like an About screen.
+
 ![Horizontal Growht](./ReadmeImages/HorizontalGrow.png)
 ## Flights Dependencies Graph Example
 We have a few different components on this example
