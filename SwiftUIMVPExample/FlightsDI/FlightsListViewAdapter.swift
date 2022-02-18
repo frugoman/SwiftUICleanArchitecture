@@ -11,7 +11,7 @@ struct FlightsListViewAdapter: View {
         let onAppear = {
             GetAllFlightsUseCase(
                 output: presenter.onFlightsFetched(_:),
-                repository: FlightsRepository()
+                repository: MockedFlightsRepository()
             ).getAll()
         }
         return flightsListView

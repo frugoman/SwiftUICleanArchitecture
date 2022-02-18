@@ -18,7 +18,7 @@ struct FlightDetailViewAdapter: View {
         let useCase = GetFlightByIdUseCase(
             output: presenter.onFlightFetched(_:),
             onNotFound: presenter.on(flightNotFound:),
-            repository: FlightsRepository()
+            repository: MockedFlightsRepository()
         )
         let onAppear = { useCase.getFlight(byId: flightId) }
         return AnyView(detailView.onAppear(perform: onAppear))
