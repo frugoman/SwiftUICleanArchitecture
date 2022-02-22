@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct SwiftUIMVPExampleApp: App {
+struct SwiftUIExampleApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationFlightsFlow()

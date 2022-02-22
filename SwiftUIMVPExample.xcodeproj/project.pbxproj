@@ -7,14 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		53E8976D27B27A9A00A73444 /* SwiftUIMVPExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E8976C27B27A9A00A73444 /* SwiftUIMVPExampleApp.swift */; };
-		53E8976F27B27A9A00A73444 /* FlightsLitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E8976E27B27A9A00A73444 /* FlightsLitsView.swift */; };
+		53E8976D27B27A9A00A73444 /* SwiftUIExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E8976C27B27A9A00A73444 /* SwiftUIExampleApp.swift */; };
 		53E8977C27B2C09B00A73444 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E8977B27B2C09B00A73444 /* Flight.swift */; };
-		53E8977F27B2C0CA00A73444 /* FlightsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E8977E27B2C0CA00A73444 /* FlightsListPresenter.swift */; };
-		53E8978327B2C16100A73444 /* FlightRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E8978227B2C16100A73444 /* FlightRowView.swift */; };
 		53E8978527B2C8D200A73444 /* FlightsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E8978427B2C8D200A73444 /* FlightsRepository.swift */; };
-		53E8978E27B2EC5300A73444 /* FlightsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E8978B27B2EAF200A73444 /* FlightsDetailView.swift */; };
-		53E8978F27B2EC5600A73444 /* FlightsDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E8978D27B2EAF200A73444 /* FlightsDetailPresenter.swift */; };
 		53E8979327B2F65700A73444 /* AirportNameVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E8979227B2F65700A73444 /* AirportNameVIew.swift */; };
 		53E8979827B31AC500A73444 /* GetFlightByIdUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E8979727B31AC500A73444 /* GetFlightByIdUseCase.swift */; };
 		53E8979A27B31C0300A73444 /* GetAllFlightsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E8979927B31C0300A73444 /* GetAllFlightsUseCase.swift */; };
@@ -27,14 +22,9 @@
 
 /* Begin PBXFileReference section */
 		53E8976927B27A9A00A73444 /* SwiftUIMVPExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMVPExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		53E8976C27B27A9A00A73444 /* SwiftUIMVPExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMVPExampleApp.swift; sourceTree = "<group>"; };
-		53E8976E27B27A9A00A73444 /* FlightsLitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsLitsView.swift; sourceTree = "<group>"; };
+		53E8976C27B27A9A00A73444 /* SwiftUIExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExampleApp.swift; sourceTree = "<group>"; };
 		53E8977B27B2C09B00A73444 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
-		53E8977E27B2C0CA00A73444 /* FlightsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsListPresenter.swift; sourceTree = "<group>"; };
-		53E8978227B2C16100A73444 /* FlightRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRowView.swift; sourceTree = "<group>"; };
 		53E8978427B2C8D200A73444 /* FlightsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsRepository.swift; sourceTree = "<group>"; };
-		53E8978B27B2EAF200A73444 /* FlightsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsDetailView.swift; sourceTree = "<group>"; };
-		53E8978D27B2EAF200A73444 /* FlightsDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsDetailPresenter.swift; sourceTree = "<group>"; };
 		53E8979227B2F65700A73444 /* AirportNameVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportNameVIew.swift; sourceTree = "<group>"; };
 		53E8979727B31AC500A73444 /* GetFlightByIdUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFlightByIdUseCase.swift; sourceTree = "<group>"; };
 		53E8979927B31C0300A73444 /* GetAllFlightsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllFlightsUseCase.swift; sourceTree = "<group>"; };
@@ -56,6 +46,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5365633627C588B600B246C3 /* FlightsPresentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FlightsPresentation;
+			sourceTree = "<group>";
+		};
 		53E8976027B27A9A00A73444 = {
 			isa = PBXGroup;
 			children = (
@@ -76,8 +73,9 @@
 			isa = PBXGroup;
 			children = (
 				53E8979F27B31DF300A73444 /* FlightsDI */,
-				53E8978827B2EAD700A73444 /* FlightsModule */,
-				53E8976C27B27A9A00A73444 /* SwiftUIMVPExampleApp.swift */,
+				5365633627C588B600B246C3 /* FlightsPresentation */,
+				53E8978827B2EAD700A73444 /* FlightsDomain */,
+				53E8976C27B27A9A00A73444 /* SwiftUIExampleApp.swift */,
 			);
 			path = SwiftUIMVPExample;
 			sourceTree = "<group>";
@@ -93,66 +91,13 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
-		53E8978027B2C13500A73444 /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				53E8977E27B2C0CA00A73444 /* FlightsListPresenter.swift */,
-			);
-			path = Presentation;
-			sourceTree = "<group>";
-		};
-		53E8978127B2C14600A73444 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				53E8976E27B27A9A00A73444 /* FlightsLitsView.swift */,
-				53E8978227B2C16100A73444 /* FlightRowView.swift */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		53E8978627B2EAB100A73444 /* List */ = {
-			isa = PBXGroup;
-			children = (
-				53E8978027B2C13500A73444 /* Presentation */,
-				53E8978127B2C14600A73444 /* UI */,
-			);
-			path = List;
-			sourceTree = "<group>";
-		};
-		53E8978727B2EAC500A73444 /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				53E8978C27B2EAF200A73444 /* Presentation */,
-				53E8978927B2EAF200A73444 /* UI */,
-			);
-			path = Detail;
-			sourceTree = "<group>";
-		};
-		53E8978827B2EAD700A73444 /* FlightsModule */ = {
+		53E8978827B2EAD700A73444 /* FlightsDomain */ = {
 			isa = PBXGroup;
 			children = (
 				53E8979027B2F64900A73444 /* Shared */,
 				53E8977D27B2C0B300A73444 /* Domain */,
-				53E8978727B2EAC500A73444 /* Detail */,
-				53E8978627B2EAB100A73444 /* List */,
 			);
-			path = FlightsModule;
-			sourceTree = "<group>";
-		};
-		53E8978927B2EAF200A73444 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				53E8978B27B2EAF200A73444 /* FlightsDetailView.swift */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		53E8978C27B2EAF200A73444 /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				53E8978D27B2EAF200A73444 /* FlightsDetailPresenter.swift */,
-			);
-			path = Presentation;
+			path = FlightsDomain;
 			sourceTree = "<group>";
 		};
 		53E8979027B2F64900A73444 /* Shared */ = {
@@ -231,6 +176,8 @@
 			dependencies = (
 			);
 			name = SwiftUIMVPExample;
+			packageProductDependencies = (
+			);
 			productName = SwiftUIMVPExample;
 			productReference = 53E8976927B27A9A00A73444 /* SwiftUIMVPExample.app */;
 			productType = "com.apple.product-type.application";
@@ -286,18 +233,13 @@
 				53E8977C27B2C09B00A73444 /* Flight.swift in Sources */,
 				53E8979E27B31D7E00A73444 /* FlightsListViewAdapter.swift in Sources */,
 				53E897A327B31E3200A73444 /* ModalFlightsFlow.swift in Sources */,
-				53E8976F27B27A9A00A73444 /* FlightsLitsView.swift in Sources */,
-				53E8978327B2C16100A73444 /* FlightRowView.swift in Sources */,
 				53E897A727B3C5C300A73444 /* MockedFlightsRepository.swift in Sources */,
 				53E8979A27B31C0300A73444 /* GetAllFlightsUseCase.swift in Sources */,
-				53E8978F27B2EC5600A73444 /* FlightsDetailPresenter.swift in Sources */,
 				53E8979C27B31D7200A73444 /* FlightDetailViewAdapter.swift in Sources */,
-				53E8978E27B2EC5300A73444 /* FlightsDetailView.swift in Sources */,
 				53E8979327B2F65700A73444 /* AirportNameVIew.swift in Sources */,
 				53E897A127B31E2500A73444 /* NavigationFlightsFlow.swift in Sources */,
-				53E8977F27B2C0CA00A73444 /* FlightsListPresenter.swift in Sources */,
 				53E8979827B31AC500A73444 /* GetFlightByIdUseCase.swift in Sources */,
-				53E8976D27B27A9A00A73444 /* SwiftUIMVPExampleApp.swift in Sources */,
+				53E8976D27B27A9A00A73444 /* SwiftUIExampleApp.swift in Sources */,
 				53E8978527B2C8D200A73444 /* FlightsRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

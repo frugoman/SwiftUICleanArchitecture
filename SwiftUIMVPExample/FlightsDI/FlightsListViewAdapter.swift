@@ -1,4 +1,5 @@
 import SwiftUI
+import FlightsMVPPresentation
 
 /// Composes the FlightListView with complex funtionality
 struct FlightsListViewAdapter: View {
