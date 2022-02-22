@@ -1,8 +1,10 @@
 import SwiftUI
 
-struct FlightDetailView: View {
+public struct FlightDetailView: View {
     @Binding var flight: FlightDetailViewModel?
     @State var errorMessage: String?
+    
+    public init() {}
     
     var body: some View {
         if let flight = flight {

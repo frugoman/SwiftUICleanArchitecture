@@ -1,24 +1,26 @@
-import Foundation
-
-protocol FlightDetailPresenterView {
+public protocol FlightDetailPresenterView {
     func show(flight: FlightDetailViewModel)
     func showFlightNotFound(message: String)
 }
 
-struct FlightDetailViewModel {
+public struct FlightDetailViewModel {
     let origin: String
     let destination: String
     let number: String
 }
 
-struct FlightsDetailPresenter {
+public struct FlightsDetailPresenter {
     let view: FlightDetailPresenterView
     
-    func onFlightFetched(_ flight: Flight) {
+    public init(view: FlightDetailPresenterView) {
+        self.view = view
+    }
+    
+    public func onFlightFetched(_ flight: Flight) {
         view.show(flight: .with(flight: flight))
     }
     
-    func on(flightNotFound id: String) {
+    public func on(flightNotFound id: String) {
         view.showFlightNotFound(message: "Flight \(id) was not found")
     }
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5365633F27C58BD200B246C3 /* FlightsMVPPresentation in Frameworks */ = {isa = PBXBuildFile; productRef = 5365633E27C58BD200B246C3 /* FlightsMVPPresentation */; };
+		5365634127C58E0700B246C3 /* FlightsDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 5365634027C58E0700B246C3 /* FlightsDomain */; };
 		53E8976D27B27A9A00A73444 /* SwiftUIExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E8976C27B27A9A00A73444 /* SwiftUIExampleApp.swift */; };
 		53E8977C27B2C09B00A73444 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E8977B27B2C09B00A73444 /* Flight.swift */; };
 		53E8978527B2C8D200A73444 /* FlightsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E8978427B2C8D200A73444 /* FlightsRepository.swift */; };
@@ -42,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5365634127C58E0700B246C3 /* FlightsDomain in Frameworks */,
 				5365633F27C58BD200B246C3 /* FlightsMVPPresentation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,6 +192,7 @@
 			name = SwiftUIMVPExample;
 			packageProductDependencies = (
 				5365633E27C58BD200B246C3 /* FlightsMVPPresentation */,
+				5365634027C58E0700B246C3 /* FlightsDomain */,
 			);
 			productName = SwiftUIMVPExample;
 			productReference = 53E8976927B27A9A00A73444 /* SwiftUIMVPExample.app */;
@@ -463,6 +466,10 @@
 		5365633E27C58BD200B246C3 /* FlightsMVPPresentation */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FlightsMVPPresentation;
+		};
+		5365634027C58E0700B246C3 /* FlightsDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FlightsDomain;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
