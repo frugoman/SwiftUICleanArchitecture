@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5365633F27C58BD200B246C3 /* FlightsMVPPresentation in Frameworks */ = {isa = PBXBuildFile; productRef = 5365633E27C58BD200B246C3 /* FlightsMVPPresentation */; };
 		53E8976D27B27A9A00A73444 /* SwiftUIExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E8976C27B27A9A00A73444 /* SwiftUIExampleApp.swift */; };
 		53E8977C27B2C09B00A73444 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E8977B27B2C09B00A73444 /* Flight.swift */; };
 		53E8978527B2C8D200A73444 /* FlightsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E8978427B2C8D200A73444 /* FlightsRepository.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5365633C27C58BCF00B246C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		53E8976927B27A9A00A73444 /* SwiftUIMVPExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMVPExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53E8976C27B27A9A00A73444 /* SwiftUIExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExampleApp.swift; sourceTree = "<group>"; };
 		53E8977B27B2C09B00A73444 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5365633F27C58BD200B246C3 /* FlightsMVPPresentation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,11 +56,19 @@
 			path = FlightsPresentation;
 			sourceTree = "<group>";
 		};
+		5365633D27C58BD200B246C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		53E8976027B27A9A00A73444 = {
 			isa = PBXGroup;
 			children = (
 				53E8976B27B27A9A00A73444 /* SwiftUIMVPExample */,
 				53E8976A27B27A9A00A73444 /* Products */,
+				5365633D27C58BD200B246C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +83,7 @@
 		53E8976B27B27A9A00A73444 /* SwiftUIMVPExample */ = {
 			isa = PBXGroup;
 			children = (
+				5365633C27C58BCF00B246C3 /* Info.plist */,
 				53E8979F27B31DF300A73444 /* FlightsDI */,
 				5365633627C588B600B246C3 /* FlightsPresentation */,
 				53E8978827B2EAD700A73444 /* FlightsDomain */,
@@ -177,6 +189,7 @@
 			);
 			name = SwiftUIMVPExample;
 			packageProductDependencies = (
+				5365633E27C58BD200B246C3 /* FlightsMVPPresentation */,
 			);
 			productName = SwiftUIMVPExample;
 			productReference = 53E8976927B27A9A00A73444 /* SwiftUIMVPExample.app */;
@@ -373,6 +386,7 @@
 				DEVELOPMENT_TEAM = L6DQA3VYBP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIMVPExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -402,6 +416,7 @@
 				DEVELOPMENT_TEAM = L6DQA3VYBP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIMVPExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -443,6 +458,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5365633E27C58BD200B246C3 /* FlightsMVPPresentation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FlightsMVPPresentation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 53E8976127B27A9A00A73444 /* Project object */;
 }
