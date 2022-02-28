@@ -1,19 +1,24 @@
-protocol FlightsListPresenterView {
+import FlightsDomain
+public protocol FlightsListPresenterView {
     func show(flights: [FlightViewModel])
     func showNoFlightsMessage(_ message: String)
 }
 
-struct FlightViewModel: Identifiable {
-    var id: String
+public struct FlightViewModel: Identifiable {
+    public var id: String
     let origin: String
     let destination: String
     let number: String
 }
 
-struct FlightsListPresenter {
+public struct FlightsListPresenter {
     let view: FlightsListPresenterView
     
-    func onFlightsFetched(_ flights: [Flight]) {
+    public init(view: FlightsListPresenterView) {
+        self.view = view
+    }
+    
+    public func onFlightsFetched(_ flights: [Flight]) {
         guard flights.count > 0 else {
             view.showNoFlightsMessage("No available flights at the moment")
             return

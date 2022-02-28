@@ -11,9 +11,9 @@ import SwiftUI
 struct SwiftUIExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationFlightsFlow()
+//            NavigationFlightsFlow()
             // Swap between the 2 to see the different approaches
-            //ModalFlightsFlow()
+            ModalFlightsFlow()
         }
     }
 }

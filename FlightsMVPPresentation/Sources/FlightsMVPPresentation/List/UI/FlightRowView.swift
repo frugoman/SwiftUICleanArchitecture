@@ -34,5 +34,6 @@ struct FlightRowView: View {
 struct FlightRowView_Previews: PreviewProvider {
     static var previews: some View {
         FlightRowView(flight: FlightViewModel(id: "", origin: "BRC", destination: "LON", number: "123"))
+            .previewLayout(.sizeThatFits)
     }
 }

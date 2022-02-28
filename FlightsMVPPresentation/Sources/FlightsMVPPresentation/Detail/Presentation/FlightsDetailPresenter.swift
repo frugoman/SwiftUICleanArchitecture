@@ -1,3 +1,5 @@
+import FlightsDomain
+
 public protocol FlightDetailPresenterView {
     func show(flight: FlightDetailViewModel)
     func showFlightNotFound(message: String)

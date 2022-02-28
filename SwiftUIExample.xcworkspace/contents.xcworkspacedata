@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:FlightsMVVMPresentation">
+   </FileRef>
+   <FileRef
       location = "group:FlightsDomain">
    </FileRef>
    <FileRef

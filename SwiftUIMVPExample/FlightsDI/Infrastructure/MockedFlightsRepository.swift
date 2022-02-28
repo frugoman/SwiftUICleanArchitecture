@@ -1,3 +1,5 @@
+import FlightsDomain
+
 class MockedFlightsRepository: FlightsRepository {
     private let cache = [
         Flight(id: "ahsdj2123", origin: Flight.Airport(name: "LON"), destination: Flight.Airport(name: "MDZ"), number: "123"),

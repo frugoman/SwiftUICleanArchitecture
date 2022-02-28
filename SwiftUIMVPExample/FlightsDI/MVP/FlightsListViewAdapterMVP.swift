@@ -1,8 +1,9 @@
 import SwiftUI
 import FlightsMVPPresentation
+import FlightsDomain
 
 /// Composes the FlightListView with complex funtionality
-struct FlightsListViewAdapter: View {
+struct FlightsListViewAdapterMVP: View {
     var onFlightSelected: (String) -> Void
     @State private var flights = [FlightViewModel]()
     

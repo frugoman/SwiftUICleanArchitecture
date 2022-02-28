@@ -1,11 +1,11 @@
 import XCTest
-@testable import FlightsDomain
+@testable import FlightsMVVMPresentation
 
-final class FlightsDomainTests: XCTestCase {
+final class FlightsMVVMPresentationTests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(FlightsDomain().text, "Hello, World!")
+        XCTAssertEqual(FlightsMVVMPresentation().text, "Hello, World!")
     }
 }

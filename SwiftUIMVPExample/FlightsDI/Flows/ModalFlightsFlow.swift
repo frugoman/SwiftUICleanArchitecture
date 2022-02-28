@@ -7,12 +7,12 @@ struct ModalFlightsFlow: View {
     @State private var selectedFlightId: String?
     
     var body: some View {
-        FlightsListViewAdapter { fId in
+        FlightsListViewAdapterMVVM { fId in
             selectedFlightId = fId
             showDetail = true
         }
         .sheet(isPresented: $showDetail) {
-            FlightDetailViewAdapter(flightId: $selectedFlightId)
+            FlightDetailViewAdapterMVVM(flightId: $selectedFlightId)
         }
     }
 }
