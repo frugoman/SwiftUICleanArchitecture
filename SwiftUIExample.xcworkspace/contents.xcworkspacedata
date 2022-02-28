@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:FlightsMVVMPresentation">
+   </FileRef>
+   <FileRef
+      location = "group:FlightsDomain">
+   </FileRef>
+   <FileRef
+      location = "group:FlightsMVPPresentation">
+   </FileRef>
+   <FileRef
+      location = "container:SwiftUIMVPExample.xcodeproj">
+   </FileRef>
+</Workspace>

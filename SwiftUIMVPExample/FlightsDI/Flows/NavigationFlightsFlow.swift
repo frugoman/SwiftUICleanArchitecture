@@ -9,12 +9,12 @@ struct NavigationFlightsFlow: View {
     var body: some View {
         NavigationView {
             HStack {
-                FlightsListViewAdapter { fId in
+                FlightsListViewAdapterMVP { fId in
                     selectedFlightId = fId
                     selection = "details"
                 }
                 NavigationLink(
-                    destination: FlightDetailViewAdapter(flightId: $selectedFlightId)
+                    destination: FlightDetailViewAdapterMVP(flightId: $selectedFlightId)
                         .navigationTitle("Detail"),
                     tag: "details",
                     selection: $selection
