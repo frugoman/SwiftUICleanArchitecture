@@ -1,4 +1,5 @@
 import FlightsDomain
+
 public protocol FlightsListPresenterView {
     func show(flights: [FlightViewModel])
     func showNoFlightsMessage(_ message: String)
@@ -11,19 +12,16 @@ public struct FlightViewModel: Identifiable {
     let number: String
 }
 
-public struct FlightsListPresenter {
-    let view: FlightsListPresenterView
-    
-    public init(view: FlightsListPresenterView) {
-        self.view = view
-    }
+public class FlightsListPresenter {
+    public var view: FlightsListPresenterView?
+    public init() {}
     
     public func onFlightsFetched(_ flights: [Flight]) {
         guard flights.count > 0 else {
-            view.showNoFlightsMessage("No available flights at the moment")
+            view?.showNoFlightsMessage("No available flights at the moment")
             return
         }
-        view.show(flights: flights.map(FlightViewModel.with(flight:)))
+        view?.show(flights: flights.map(FlightViewModel.with(flight:)))
     }
 }
 

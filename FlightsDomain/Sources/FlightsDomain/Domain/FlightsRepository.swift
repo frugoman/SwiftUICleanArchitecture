@@ -1,5 +1,5 @@
 public protocol FlightsRepository {
-    func getBy(id: String, callback: (Flight?) -> Void)
+    func getBy(id: String, callback: @escaping (Flight?) -> Void)
     
-    func getAll(callback: ([Flight]) -> Void)
+    func getAll(callback: @escaping ([Flight]) -> Void)
 }

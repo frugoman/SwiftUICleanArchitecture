@@ -12,6 +12,10 @@
 		5365633F27C58BD200B246C3 /* FlightsMVPPresentation in Frameworks */ = {isa = PBXBuildFile; productRef = 5365633E27C58BD200B246C3 /* FlightsMVPPresentation */; };
 		5365634127C58E0700B246C3 /* FlightsDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 5365634027C58E0700B246C3 /* FlightsDomain */; };
 		5365634327CC471700B246C3 /* FlightsMVVMPresentation in Frameworks */ = {isa = PBXBuildFile; productRef = 5365634227CC471700B246C3 /* FlightsMVVMPresentation */; };
+		53AFFD5C27CFBB3800F42C55 /* UIKitFlightsListFactoryMVP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AFFD5B27CFBB3800F42C55 /* UIKitFlightsListFactoryMVP.swift */; };
+		53AFFD5E27D219BE00F42C55 /* AnalyticsFlightsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AFFD5D27D219BE00F42C55 /* AnalyticsFlightsUtils.swift */; };
+		53AFFD6427D21A2E00F42C55 /* UIKitModalFlightsFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AFFD6327D21A2E00F42C55 /* UIKitModalFlightsFlow.swift */; };
+		53AFFD6627D21BA900F42C55 /* UIKitFlightsDetailFactoryMVP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AFFD6527D21BA900F42C55 /* UIKitFlightsDetailFactoryMVP.swift */; };
 		53E8976D27B27A9A00A73444 /* SwiftUIExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E8976C27B27A9A00A73444 /* SwiftUIExampleApp.swift */; };
 		53E8979C27B31D7200A73444 /* FlightDetailViewAdapterMVP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E8979B27B31D7200A73444 /* FlightDetailViewAdapterMVP.swift */; };
 		53E8979E27B31D7E00A73444 /* FlightsListViewAdapterMVP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E8979D27B31D7E00A73444 /* FlightsListViewAdapterMVP.swift */; };
@@ -24,6 +28,10 @@
 		53289AAD27CC62AD00A98FB2 /* FlightsListViewAdapterMVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsListViewAdapterMVVM.swift; sourceTree = "<group>"; };
 		53289AAE27CC62AD00A98FB2 /* FlightDetailViewAdapterMVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailViewAdapterMVVM.swift; sourceTree = "<group>"; };
 		5365633C27C58BCF00B246C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		53AFFD5B27CFBB3800F42C55 /* UIKitFlightsListFactoryMVP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitFlightsListFactoryMVP.swift; sourceTree = "<group>"; };
+		53AFFD5D27D219BE00F42C55 /* AnalyticsFlightsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsFlightsUtils.swift; sourceTree = "<group>"; };
+		53AFFD6327D21A2E00F42C55 /* UIKitModalFlightsFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitModalFlightsFlow.swift; sourceTree = "<group>"; };
+		53AFFD6527D21BA900F42C55 /* UIKitFlightsDetailFactoryMVP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitFlightsDetailFactoryMVP.swift; sourceTree = "<group>"; };
 		53E8976927B27A9A00A73444 /* SwiftUIMVPExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMVPExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53E8976C27B27A9A00A73444 /* SwiftUIExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExampleApp.swift; sourceTree = "<group>"; };
 		53E8979B27B31D7200A73444 /* FlightDetailViewAdapterMVP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailViewAdapterMVP.swift; sourceTree = "<group>"; };
@@ -50,8 +58,9 @@
 		53289AAB27CC62A700A98FB2 /* MVP */ = {
 			isa = PBXGroup;
 			children = (
-				53E8979D27B31D7E00A73444 /* FlightsListViewAdapterMVP.swift */,
-				53E8979B27B31D7200A73444 /* FlightDetailViewAdapterMVP.swift */,
+				53AFFD5F27D219F400F42C55 /* SwiftUI */,
+				53AFFD6027D219FB00F42C55 /* UIKit */,
+				53AFFD5D27D219BE00F42C55 /* AnalyticsFlightsUtils.swift */,
 			);
 			path = MVP;
 			sourceTree = "<group>";
@@ -71,6 +80,57 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53AFFD5F27D219F400F42C55 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				53E8979D27B31D7E00A73444 /* FlightsListViewAdapterMVP.swift */,
+				53E8979B27B31D7200A73444 /* FlightDetailViewAdapterMVP.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		53AFFD6027D219FB00F42C55 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				53AFFD6527D21BA900F42C55 /* UIKitFlightsDetailFactoryMVP.swift */,
+				53AFFD5B27CFBB3800F42C55 /* UIKitFlightsListFactoryMVP.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		53AFFD6127D21A1400F42C55 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				53B5822227E1E6AF004101A3 /* MVVM */,
+				53B5822327E1E6B8004101A3 /* MVP */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		53AFFD6227D21A1C00F42C55 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				53AFFD6327D21A2E00F42C55 /* UIKitModalFlightsFlow.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		53B5822227E1E6AF004101A3 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				53E897A227B31E3200A73444 /* ModalFlightsFlow.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		53B5822327E1E6B8004101A3 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				53E897A027B31E2500A73444 /* NavigationFlightsFlow.swift */,
+			);
+			path = MVP;
 			sourceTree = "<group>";
 		};
 		53E8976027B27A9A00A73444 = {
@@ -114,8 +174,8 @@
 		53E897A427B31E6100A73444 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
-				53E897A227B31E3200A73444 /* ModalFlightsFlow.swift */,
-				53E897A027B31E2500A73444 /* NavigationFlightsFlow.swift */,
+				53AFFD6227D21A1C00F42C55 /* UIKit */,
+				53AFFD6127D21A1400F42C55 /* SwiftUI */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -203,11 +263,15 @@
 			files = (
 				53289AB027CC62AD00A98FB2 /* FlightsListViewAdapterMVVM.swift in Sources */,
 				53E8979E27B31D7E00A73444 /* FlightsListViewAdapterMVP.swift in Sources */,
+				53AFFD6427D21A2E00F42C55 /* UIKitModalFlightsFlow.swift in Sources */,
 				53E897A327B31E3200A73444 /* ModalFlightsFlow.swift in Sources */,
 				53E897A727B3C5C300A73444 /* MockedFlightsRepository.swift in Sources */,
 				53289AAF27CC62AD00A98FB2 /* FlightDetailViewAdapterMVVM.swift in Sources */,
 				53E8979C27B31D7200A73444 /* FlightDetailViewAdapterMVP.swift in Sources */,
+				53AFFD5C27CFBB3800F42C55 /* UIKitFlightsListFactoryMVP.swift in Sources */,
 				53E897A127B31E2500A73444 /* NavigationFlightsFlow.swift in Sources */,
+				53AFFD6627D21BA900F42C55 /* UIKitFlightsDetailFactoryMVP.swift in Sources */,
+				53AFFD5E27D219BE00F42C55 /* AnalyticsFlightsUtils.swift in Sources */,
 				53E8976D27B27A9A00A73444 /* SwiftUIExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

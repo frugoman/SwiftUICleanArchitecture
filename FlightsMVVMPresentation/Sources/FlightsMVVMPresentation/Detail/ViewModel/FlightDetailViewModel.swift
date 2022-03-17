@@ -1,7 +1,6 @@
 import Combine
 import FlightsDomain
 
-
 public class FlightDetailViewModel: ObservableObject {
     @Published var origin: String = ""
     @Published var destination: String = ""

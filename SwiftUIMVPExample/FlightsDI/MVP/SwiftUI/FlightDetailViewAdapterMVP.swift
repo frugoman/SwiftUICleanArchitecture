@@ -16,7 +16,8 @@ struct FlightDetailViewAdapterMVP: View {
             return AnyView(EmptyView())
         }
         let detailView = FlightDetailView(flight: $flight)
-        let presenter = FlightsDetailPresenter(view: detailView)
+        let presenter = FlightsDetailPresenter()
+        presenter.view = detailView
         let output = OutputComposer(flightFound: presenter.onFlightFetched(_:), flightNotFound: presenter.on(flightNotFound:))
         let useCase = GetFlightByIdUseCase(
             output: output,

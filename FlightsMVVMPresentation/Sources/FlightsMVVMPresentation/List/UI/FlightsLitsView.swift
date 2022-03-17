@@ -16,13 +16,7 @@ public struct FlightsListView: View {
     }
     
     public var body: some View {
-        FlightsListViewInternal(flights: vm.flights)
-    }
-}
-
-func FlightsListViewInternal(flights: [FlightListItemViewModel]) -> some View {
-    HStack {
-        List(flights, id: \.origin) { flight in
+        List(vm.flights, id: \.origin) { flight in
             FlightRowView(vm: flight)
                 .onTapGesture(perform: flight.onSelected)
         }
@@ -31,8 +25,8 @@ func FlightsListViewInternal(flights: [FlightListItemViewModel]) -> some View {
 
 struct FlightsListView_Previews: PreviewProvider {
     static var previews: some View {
-        FlightsListViewInternal(flights: [
-            FlightListItemViewModel(flight: Flight(id: "1", origin: Flight.Airport(name: "MDZ"), destination: Flight.Airport(name: "LDC"), number: "2312"), onSelected: { })
-        ])
+        let vm = FlightsListViewModel(onSelected: { _ in})
+        vm.onFlightsFetched([Flight(id: "1", origin: Flight.Airport(name: "MDZ"), destination: Flight.Airport(name: "LDC"), number: "2312")])
+        return FlightsListView(vm: vm)
     }
 }

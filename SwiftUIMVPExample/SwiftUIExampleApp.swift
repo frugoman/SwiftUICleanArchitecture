@@ -11,9 +11,10 @@ import SwiftUI
 struct SwiftUIExampleApp: App {
     var body: some Scene {
         WindowGroup {
-//            NavigationFlightsFlow()
-            // Swap between the 2 to see the different approaches
-            ModalFlightsFlow()
+            // We can A/B Test to switch to different implementations of the feature
+            NavigationFlightsFlow()
+            // ModalFlightsFlow()
+            // UIKitModalFlightsFlow().start()
         }
     }
 }

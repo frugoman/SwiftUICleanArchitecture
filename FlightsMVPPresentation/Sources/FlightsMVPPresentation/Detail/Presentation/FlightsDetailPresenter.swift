@@ -11,19 +11,17 @@ public struct FlightDetailViewModel {
     let number: String
 }
 
-public struct FlightsDetailPresenter {
-    let view: FlightDetailPresenterView
+public class FlightsDetailPresenter {
+    public var view: FlightDetailPresenterView?
     
-    public init(view: FlightDetailPresenterView) {
-        self.view = view
-    }
+    public init() {}
     
     public func onFlightFetched(_ flight: Flight) {
-        view.show(flight: .with(flight: flight))
+        view?.show(flight: .with(flight: flight))
     }
     
     public func on(flightNotFound id: String) {
-        view.showFlightNotFound(message: "Flight \(id) was not found")
+        view?.showFlightNotFound(message: "Flight \(id) was not found")
     }
 }
 
