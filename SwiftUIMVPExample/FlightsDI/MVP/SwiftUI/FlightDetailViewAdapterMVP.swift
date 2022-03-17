@@ -8,13 +8,13 @@ struct FlightDetailViewAdapterMVP: View {
     @State var flight: FlightDetailViewModel?
     
     var body: some View {
-        DetailView(flightId: flightId)
-    }
-    
-    private func DetailView(flightId: String?) -> some View {
         guard let flightId = flightId else {
             return AnyView(EmptyView())
         }
+        return AnyView(DetailView(flightId: flightId))
+    }
+    
+    private func DetailView(flightId: String) -> some View {
         let detailView = FlightDetailView(flight: $flight)
         let presenter = FlightsDetailPresenter()
         presenter.view = detailView
@@ -23,8 +23,7 @@ struct FlightDetailViewAdapterMVP: View {
             output: output,
             repository: MockedFlightsRepository()
         )
-        let onAppear = { useCase.getFlight(byId: flightId) }
-        return AnyView(detailView.onAppear(perform: onAppear))
+        return detailView.onAppear { useCase.getFlight(byId: flightId) }
     }
 }
 

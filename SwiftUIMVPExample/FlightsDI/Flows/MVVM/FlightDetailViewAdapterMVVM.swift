@@ -10,15 +10,18 @@ struct FlightDetailViewAdapterMVVM: View {
         guard let flightId = flightId else {
             return AnyView(EmptyView())
         }
+        return AnyView(DetailView(flightId: flightId))
+    }
+    
+    private func DetailView(flightId: String) -> some View {
         let vm = FlightDetailViewModel()
-        let view = FlightDetailViewContainer(vm: vm)
         let output = OutputComposer(flightFound: vm.onFlightFetched(_:), flightNotFound: vm.on(flightNotFound:))
         let useCase = GetFlightByIdUseCase(
             output: output,
             repository: MockedFlightsRepository()
         )
-        let onAppear = { useCase.getFlight(byId: flightId) }
-        return AnyView(view.onAppear(perform: onAppear))
+        return FlightDetailViewContainer(vm: vm)
+            .onAppear { useCase.getFlight(byId: flightId) }
     }
 }
 

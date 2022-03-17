@@ -23,13 +23,11 @@ struct FlightsListViewAdapterMVP: View {
                 tracker: tracker
             )
         )
-        let onAppear = {
-            useCase.getAll()
-            flightsLogger.onLoad()
-        }
         return flightsListView
-            .onAppear(perform: onAppear)
-            .background(Color.red)
+            .onAppear {
+                useCase.getAll()
+                flightsLogger.onLoad()
+            }
     }
     
     struct FlightsListLogger {
