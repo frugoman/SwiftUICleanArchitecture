@@ -7,10 +7,9 @@ struct FlightDetailViewAdapterMVVM: View {
     @Binding var flightId: String?
     
     var body: some View {
-        guard let flightId = flightId else {
-            return AnyView(EmptyView())
+        if let flightId = flightId {
+            DetailView(flightId: flightId)
         }
-        return AnyView(DetailView(flightId: flightId))
     }
     
     private func DetailView(flightId: String) -> some View {
